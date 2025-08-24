@@ -35,6 +35,7 @@ body {
 .blue {
   background-color: #d7d8f0;
   width: 60%;
+  padding: 20px;
 }
 .Cloud {
   display: flex;
@@ -62,14 +63,15 @@ body {
   align-items: center;
   gap: 10px;
 }
-.title-inp{
+.container-search{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.title-inp  {
   display: flex;
   justify-content: center;
-
-}
-.title-inp input {
   width: 100%;
-  margin: 40px;
   outline: none;
   border: none;
   border-radius: 40px;
