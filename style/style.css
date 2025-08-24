@@ -5,6 +5,7 @@
 }
 .container {
   display: flex;
+  height: 100vh;
 }
 .weathertitle {
   display: flex;
@@ -45,7 +46,9 @@
 }
 .day {
   display: flex;
-
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
 }
 .tomorrow {
   display: flex;
