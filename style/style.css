@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+.weathertitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.city {
+  font-size: 15px;
+}
+.purple {
+  padding: 10px;
+  background-color: #2d2a54;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.blue {
+  background-color: #d7d8f0;
+  width: 60%;
+}
+.Cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.temp {
+  font-size: 30px;
+  color: white;
+}
+.location-temp {
+  font-size: 15px;
+  color: white;
+}
+.day {
+  display: flex;
+
+}
+.tomorrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
