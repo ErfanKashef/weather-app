@@ -62,3 +62,16 @@ body {
   align-items: center;
   gap: 10px;
 }
+.title-inp{
+  display: flex;
+  justify-content: center;
+
+}
+.title-inp input {
+  width: 100%;
+  margin: 40px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 10px;
+}
