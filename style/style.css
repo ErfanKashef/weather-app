@@ -3,8 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
 .container {
   display: flex;
+  height: 100vh;
 }
 .weathertitle {
   display: flex;
@@ -27,6 +35,7 @@
 .blue {
   background-color: #d7d8f0;
   width: 60%;
+  padding: 20px;
 }
 .Cloud {
   display: flex;
@@ -45,17 +54,31 @@
 }
 .day {
   display: flex;
+
+
+  gap: 30px;
+  padding-top: 50px;
+
 }
 .tomorrow {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .title-inp {
   display: flex;
   justify-content: center;
+=======
+.container-search{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
 }
-.title-inp input {
+.title-inp  {
+  display: flex;
+  justify-content: center;
   width: 100%;
   outline: none;
   border: none;
