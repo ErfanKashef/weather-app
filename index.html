@@ -5,19 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style/style.css" />
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Weather App</title>
 </head>
-
 <body>
   <div class="container">
-
+    
     <div class="purple">
       <div class="Weathertitle">
         <h1>Weather App</h1>
         <p class="city">location</p>
       </div>
       <div class="Cloud">
-        <img src="img/image 1.png" alt="abr" />
+        <img src=".//img/image 1.png" alt="abr" />
         <p class="temp">temp</p>
         <p class="location-temp">location temp</p>
       </div>
@@ -33,84 +35,83 @@
         </div>
       </div>
     </div>
-    <div class="blue">
-      <div class="container2">
-        <div class="title-inp"><input type="text" placeholder="Search location here..."></div>
 
-        <div class="text-one-right">
-          <p>Today</p>
+
+
+    <div class="blue">
+
+        <div class="title-inp">
+          <button class="btnSearch">
+            <img src="./img/Vector.png" alt="search icon">
+          </button>
+          <input type="text" placeholder="Search location here...">
         </div>
-        <div class="item-parrent">
-          <div class="item-child">
-            <img src="img/2.png" alt="">
-            <p>Pazartesi</p>
-            <span>22°</span></div>
-            <div class="item-child">
-            <img src="img/image 2.png" alt="">
-            <p>Pazartesi</p>
-            <span>22°</span>
-          </div>
-          <div class="item-child">
-            <img src="img/image 3.png" alt="">
-            <p>Pazartesi</p>
-            <span>22°</span>
-          </div>
-          <div class="item-child">
-            <img src="img/image 4.png" alt="">
-            <p>Pazartesi</p>
-            <span>22°</span>
-          </div>
-          <div class="item-child">
-            <img src="img/image 5.png" alt="">
-            <p>Pazartesi</p>
-            <span>22°</span>
-          </div>
-          </div>
-          <div class="section2">
-            <p class="txt">Todays Highlights</p>
-            <div class="item-parrent2">
-              <div class="child2">
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-              </div>
-              <div class="child2">
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-                <div class="item2">
-                  <div class="text-img"><img src="img/image 7.png" alt=""><p>Wind Status</p></div>
-                  <p class="p1">Today wind speed</p>
-                  <p class="p2">12 km/h</p>
-                </div>
-              </div>
-              
+
+
+        <div class="today-container">
+          <h1>Today</h1>
+          <div class="today-card">
+            <div class="today-child">
+             <img src="img/2.png" alt="">
+             <p>Pazartesi</p>
+             <span>22°</span>
+            </div>
+            <div class="today-child">
+             <img src="img/image 2.png" alt="">
+             <p>Pazartesi</p>
+             <span>22°</span>
+            </div>
+            <div class="today-child">
+             <img src="img/image 3.png" alt="">
+             <p>Pazartesi</p>
+             <span>22°</span>
+            </div>
+            <div class="today-child">
+             <img src="img/image 4.png" alt="">
+             <p>Pazartesi</p>
+             <span>22°</span>
+            </div>
+            <div class="today-child">
+             <img src="img/image 5.png" alt="">
+             <p>Pazartesi</p>
+             <span>22°</span>
             </div>
           </div>
         </div>
+      
+
+          <div class="highlight-container">
+            <h1>Todays Highlights</h1>
+            <div class="Highlight-card">
+              <div class="highlight-child">
+                <div>
+                  <img src="img/image 7.png" alt="">
+                  <p>Wind Status</p>
+                </div>
+                  <p class="wind">Today wind speed</p>
+                  <p class="wind-speed">12 <span class="km">km/h</span></p>
+              </div>
+              <div class="highlight-child">
+                <div>
+                  <img src="img/image 7.png" alt="">
+                  <p>Wind Status</p>
+                </div>
+                  <p class="wind">Today wind speed</p>
+                  <p class="wind-speed">12 <span class="km">km/h</span></p>
+              </div>
+              <div class="highlight-child">
+                <div>
+                  <img src="img/image 7.png" alt="">
+                  <p>Wind Status</p>
+                </div>
+                  <p class="wind">Today wind speed</p>
+                  <p class="wind-speed">12 <span class="km">km/h</span></p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
-  <script src="js/app.js"></script>
 </body>
 
 </html>
