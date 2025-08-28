@@ -54,11 +54,8 @@ body {
 }
 .day {
   display: flex;
-
-
   gap: 30px;
   padding-top: 50px;
-
 }
 .tomorrow {
   display: flex;
@@ -69,14 +66,13 @@ body {
 .title-inp {
   display: flex;
   justify-content: center;
-=======
-.container-search{
+}
+.container-search {
   display: flex;
   flex-direction: row;
   gap: 10px;
-
 }
-.title-inp  {
+.title-inp {
   display: flex;
   justify-content: center;
   width: 100%;
