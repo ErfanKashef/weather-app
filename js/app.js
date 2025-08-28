@@ -1,5 +1,6 @@
 const Weathertitle = document.querySelector(".Weathertitle");
 const weatherCloud = document.querySelector(".Cloud");
+
 async function getData(city = "tehran") {
   try {
     const response = await fetch(
@@ -11,8 +12,10 @@ async function getData(city = "tehran") {
     console.log(error);
   }
 }
+
 const btnSearch = document.querySelector(".btnSearch");
 const inpCity = document.querySelector(".title-inp");
+
 btnSearch.addEventListener("click", () => {
   const city = inpCity.value;
   createData(city);
@@ -21,15 +24,20 @@ btnSearch.addEventListener("click", () => {
 async function createData(city) {
   const product = await getData(city);
   console.log(product);
+
   Weathertitle.innerHTML = "";
   weatherCloud.innerHTML = "";
+
   const locition = document.createElement("h1");
   const country = document.createElement("p");
   const avrageTemp = document.createElement("p");
+
   avrageTemp.textContent = product.main.temp;
   country.textContent = product.sys.country;
   locition.textContent = product.name;
+
   Weathertitle.append(locition, country);
   weatherCloud.append(avrageTemp);
 }
+
 createData();
