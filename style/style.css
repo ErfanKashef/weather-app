@@ -130,6 +130,8 @@ body {
   }
 }
 .today-child {
+  width:250px;
+  height: 250px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -153,6 +155,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
 }
+.hourly{
+  text-wrap: nowrap;
+}
 .highlight-container {
   display: flex;
   flex-direction: column;
@@ -170,11 +175,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 25px;
 }
-.highlight-child {
-  padding: 20px 10px;
+.highlight-child-wind , .highlight-child-humidity {
+  width: 330px;
+  padding: 20px;
   background-color: #2d2a54;
   border-radius: 30px;
   display: flex;
@@ -183,23 +189,32 @@ body {
   color: white;
   cursor: pointer;
 }
-.highlight-child:hover {
+.highlight-child-wind:hover , .highlight-child-humidity:hover{
   background-color: white;
   color: #2d2a54;
 }
-.highlight-child > div {
+.highlight-child-wind > div, .highlight-child-humidity > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: space-around;
+  align-items: center;
   gap: 10px;
 }
-.highlight-child > div p {
-  font-size: 1rem;
-  font-weight: 400;
+.highlight-child-wind  img , .highlight-child-humidity  img{
+  width: 100px;
+
+}
+.highlight-child-wind > div p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.highlight-child-humidity > div p {
+   font-size: 1.2rem;
+  font-weight: 700;
 }
 .wind {
   font-size: 0.9rem;
+  text-align: ce;
 }
 .wind-speed {
   font-size: 5rem;

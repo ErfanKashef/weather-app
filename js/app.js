@@ -4,6 +4,8 @@ const btnSearch = document.querySelector(".btnSearch");
 const inpCity = document.querySelector(".inp");
 const todayChild = Array.from(document.querySelectorAll(".today-child"));
 const todayCard = document.querySelector(".today-card");
+const windChild = document.querySelector(".highlight-child-wind");
+const humidChild = document.querySelector(".highlight-child-humidity");
 
 
 async function getData(city) {
@@ -25,6 +27,8 @@ btnSearch.addEventListener("click", () => {
 
 async function createData(city) {
   const product = await getData(city);
+  console.log(product);
+  
   const hourly = await getData2(city);
   console.log(hourly);
 
@@ -33,6 +37,7 @@ async function createData(city) {
     const cardImg = document.createElement("img");
     const today = document.createElement("p");
     const hourlyTemp = document.createElement("span");
+    card.classList.add("today-child");
     
     const imgCon = hourly.list[index].weather.main;
     console.log(imgCon);
@@ -51,6 +56,7 @@ async function createData(city) {
     const now = new Date();  
     const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     today.textContent= weekdays[now.getDay()];
+    hourlyTemp.classList.add("hourly");
 
     hourlyTemp.textContent = `${hourly.list[index].main.temp} °C `;
 
@@ -95,6 +101,31 @@ async function createData(city) {
 
   Weathertitle.append(location, country);
   weatherCloud.append(weatherImg, avrageTemp, temMinMax);
+
+ const windEls = document.querySelectorAll(".wind-speed");
+ windEls.forEach(el => el.remove());
+
+
+  const windNum = document.createElement("p");
+  const kilometer =document.createElement("span");
+  kilometer.textContent = "Km/h";
+  kilometer.classList.add("km");
+  windNum.classList.add("wind-speed");
+  windNum.textContent=`${product.wind.speed}`;
+  windChild.append(windNum);
+  windNum.append(kilometer);
+
+
+  const humidNum = document.createElement("p");
+  const percent =document.createElement("span");
+  percent.textContent = "%";
+  percent.classList.add("km");
+  humidNum.classList.add("wind-speed");
+  humidNum.textContent=`${product.main.humidity}`
+  humidChild.append(humidNum);
+  humidNum.append(percent);
+
+ 
 }
 
 async function getData2(city) {
